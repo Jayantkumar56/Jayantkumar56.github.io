@@ -202,7 +202,7 @@ svg {
 
 /* front or start of the webpage */
 .screen-height{
-    height: 100vh;
+    height: 100svh;
 }
 
 /* remove line break */
@@ -441,7 +441,7 @@ svg {
     --padding: 20px;
 
     padding: 10vh 4vw;
-    height: calc(100dvh - 2*var(--padding));
+    height: calc(100svh - 2*var(--padding));
     width: min(var(--max-width), 100% - 2*var(--padding));
 }
 .background-drone{
