@@ -391,7 +391,8 @@ svg {
     .nav-container[data-visible]::before{
         content: "";
         position: fixed;
-        inset: 0;
+        height: 120vh;
+        top: 0; left: 0; right: 0;
         background-image: linear-gradient(#0000, #000c);
     }
 
@@ -441,7 +442,7 @@ svg {
     --padding: 20px;
 
     padding: 10vh 4vw;
-    height: calc(100svh - 2*var(--padding));
+    height: calc(100lvh - 2*var(--padding));
     width: min(var(--max-width), 100% - 2*var(--padding));
 }
 .background-drone{
