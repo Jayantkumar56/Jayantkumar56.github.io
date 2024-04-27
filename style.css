@@ -204,6 +204,11 @@ svg {
 .screen-height{
     height: 100svh;
 }
+@media(max-height: 30em){
+    .screen-height{
+        height: 100vw;
+    }
+}
 
 /* remove line break */
 .remove-line-break{
@@ -424,12 +429,21 @@ svg {
     margin-inline: auto;
     height: min(550px, 45vh);
     width: min(700px, 100%);
-    background-color: yellow;
     background: url("./res/drone models/highlight_large 1.svg") center/cover no-repeat;
 }
 @media(max-width: 30em){
     .hero-cover-image{
         height: 30vh;
+    }
+}
+@media(max-width: 50em){
+    .hero-cover-image{
+        margin-top: 10vh;
+    }
+}
+@media(max-height: 30em){
+    .hero-cover-image{
+        height: 45vw;
     }
 }
 /* Hero section ends */
@@ -451,6 +465,11 @@ svg {
 .background-boat{
     margin: var(--padding) auto;
     background: url("./res/best_resolution\ 1.svg") center/cover no-repeat;
+}
+@media(max-height: 30em){
+    .background-drone, .background-boat{
+        height: calc(100vw - 2*var(--padding));
+    }
 }
 
 @media (min-width: 55em){
